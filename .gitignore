@@ -1,3 +1,14 @@
+# .idea is the thing that php storm makes
 .idea
+
+# dstore is the thing that apple makes
 .DS_Store
 node_modules
+
+# this ignores all js files
+ src/config/*.js
+
+# how to tell it to not ignore a file
+!src/config/index.js
+
+# created to prevent merge conflicts
