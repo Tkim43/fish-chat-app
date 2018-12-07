@@ -12,6 +12,7 @@ class Chat extends Component{
         this.dbRef = this.props.getAllMessages();
     }
     // cleans up your listeners . If you dont clean this up you wil end up with a bunch of different listeners
+    // it removes the listener from the database
     componentWillUnmount(){
         if(this.dbRef){
             this.dbRef.off();
